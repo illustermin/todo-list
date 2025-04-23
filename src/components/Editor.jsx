@@ -16,6 +16,13 @@ const Editor = ({ onCreate }) => {
       return;
     }
     onCreate(content);
+    setContent("");
+  };
+
+  const onKeyDown = (e) => {
+    if (e.keyCode === 13) {
+      onSubmit();
+    }
   };
 
   return (
@@ -24,6 +31,7 @@ const Editor = ({ onCreate }) => {
         value={content}
         ref={contentRef}
         onChange={onChangeContent}
+        onKeyDown={onKeyDown}
         placeholder="새로운 todo.."
       />
       <button onClick={onSubmit}>추가</button>

@@ -97,6 +97,4 @@ src/
 
 GitHub: @illustermin
 
-포트폴리오: Eureka 프로젝트 소개
-
 ```

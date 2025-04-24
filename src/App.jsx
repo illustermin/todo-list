@@ -1,7 +1,7 @@
 import "./App.css";
-import Header from "./components/Header/Header";
-import Editor from "./components/Editor/Editor";
-import List from "./components/List/List";
+import Header from "./components/Header/Header.jsx";
+import Editor from "./components/Editor/Editor.jsx";
+import List from "./components/List/List.jsx";
 import { useState, useRef, useReducer, useCallback, createContext, useMemo } from "react";
 
 const mockData = [
